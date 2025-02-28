@@ -8,7 +8,7 @@ const OverdueActivities = () => {
   ];
 
   return (
-    <div className="overdue-container bg-white pt-2 px-4 rounded shadow-sm border">
+    <div className="overdue-container bg-white pt-2 px-3">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h6 className="overdue-title mb-0">Overdue Activities</h6>
         <button className="view-upcoming btn btn-link p-0">View Upcoming</button>

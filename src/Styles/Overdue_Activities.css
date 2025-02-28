@@ -1,7 +1,6 @@
-.overdue-container {
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+  .overdue-container {
+  
+    border: 1px solid #DBDBDB;
   }
   
   .overdue-title {
@@ -21,7 +20,7 @@
   }
   
   .overdue-card {
-    border: 1px solid #ddd;
+    border: 1px solid #DBDBDB;
     border-radius: 8px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;

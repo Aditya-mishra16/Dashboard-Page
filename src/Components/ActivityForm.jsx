@@ -23,11 +23,11 @@ const ActivityForm = () => {
       <Tabs
         value={activeTab}
         onChange={(e, newValue) => setActiveTab(newValue)}
-        variant="fullWidth"
+        variant="standard"
         className="activity-tabs"
         TabIndicatorProps={{
           style: {
-            backgroundColor: "#0E2A47",
+            backgroundColor: "#11334E",
             height: "3px",
           },
         }}
@@ -158,7 +158,7 @@ const ActivityForm = () => {
             variant="contained"
             className="submit-btn"
             sx={{
-              bgcolor: "#0E3E69",
+              bgcolor: "#11334E",
               color: "white",
               "&:hover": {
                 bgcolor: "#0A2F50",

@@ -1,8 +1,8 @@
 .activity-form-container {
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 4px;
     padding-top: 100px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* border-bottom: 1 px solid #DBDBDB; */
     margin: 0px;
     overflow: hidden;
   }
@@ -14,9 +14,10 @@
   
   .tab-item {
     text-transform: none;
-    font-weight: 500;
-    font-size: 12px; /* Reduced from 14px */
+    font-weight: 600 !important;
+    font-size: 11px !important; /* Reduced from 14px */
     color: #666;
+    padding: 12px 22px !important; /* Adjust padding as needed */
   }
   
   .active-tab {
@@ -26,7 +27,7 @@
   
   .action-buttons-form {
     display: flex;
-    gap: 58px;
+    gap: 64px;
     padding: 14px;
   }
   
@@ -102,9 +103,9 @@
   }
   
   .field-label {
-    font-size: 13px; /* Reduced from 14px */
+    font-size: 12px; /* Reduced from 14px */
     font-weight: 600;
-    color: #333;
+    color: #000000;
     margin-bottom: 6px;
   }
   
@@ -137,11 +138,11 @@
   
   .submit-btn {
     text-transform: none !important;
-    padding: 8px 24px !important;
+    top: 5px;
     border-radius: 4px !important;
     font-size: 12px !important; /* Reduced font size */
-    width: 77px;
-    height: 33px;
+    width: 75px;
+    height: 30px;
   }
   
   /* Add this to reduce the size of icons */

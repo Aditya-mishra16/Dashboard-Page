@@ -6,7 +6,8 @@
 .lead-details {
     background-color: white;
     width: 485px;
-    border: 1px solid #ddd;
+    height: 648px;
+    border: 1px solid #DBDBDB;
     border-left: none;
 }
 
@@ -115,8 +116,8 @@
 
 /* Tabs */
 .custom-tabs {
-    border-bottom: 0.5px solid #ddd;
-    border-top: 0.5px solid #ddd;
+    border-bottom: 0.5px solid #DBDBDB;
+    border-top: 0.5px solid #DBDBDB;
     min-height: 32px; 
 }
 
@@ -126,11 +127,12 @@
 
 .MuiTab-root {
     min-height: 32px !important;
-    font-size: 10px !important; 
-    font-weight: 600;
+    font-size: 11px !important; 
+    font-weight: 600 !important;
     padding: 4px 8px !important; 
     text-transform: none !important; 
-    min-width: auto !important; 
+    min-width: auto !important;
+    color: #9F9F9F !important;
 }
 
 /* Tab Content */
@@ -170,7 +172,7 @@
     font-size: 12px;
     color: gray;
     padding: 12px;
-    padding-top: 70px;
+    padding-top: 170px;
 }
 
 .edit-btn {

@@ -8,7 +8,7 @@
     width: calc(100% - 50px); 
     background-color: white;
     flex-direction: column;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #DBDBDB;
     z-index: 1000; /* Ensure it's above other elements */
     padding: 4px;
 }
@@ -57,7 +57,7 @@
 }
 
 hr {
-    border: 0.5px solid #ddd;
+    border: 0.5px solid #DBDBDB;
     width: 100%;
     margin: 0px;
 }

@@ -2,17 +2,16 @@
   background-color: white;
   padding: 10px;
   padding-top: 106px;
-  border: 1px solid #eee;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #DBDBDB;
 }
 
 .logs-header {
   font-weight: 600;
   margin: 0 0 16px 0;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
   color: #11334E;
   font-size: 16px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #DBDBDB;
 }
 
 .logs-month {
@@ -23,7 +22,7 @@
 }
 
 .logs-list {
-  border-left: 2px dashed #ccc;
+  border-left: 2px dashed #DBDBDB;
   margin-left: 6px;
   padding-left: 0;
 }
