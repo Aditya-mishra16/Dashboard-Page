@@ -1,8 +1,6 @@
 .activity-form-container {
-    /* background-color: #fff; */
     border-radius: 4px;
     padding-top: 100px;
-    /* border-bottom: 1 px solid #DBDBDB; */
     margin: 0px;
     overflow: hidden;
   }
@@ -15,9 +13,9 @@
   .tab-item {
     text-transform: none;
     font-weight: 600 !important;
-    font-size: 11px !important; /* Reduced from 14px */
+    font-size: 11px !important;
     color: #666;
-    padding: 12px 22px !important; /* Adjust padding as needed */
+    padding: 12px 22px !important;
   }
   
   .active-tab {
@@ -28,7 +26,8 @@
   .action-buttons-form {
     display: flex;
     gap: 64px;
-    padding: 14px;
+    padding: 10px;
+    padding-top: 15px;
   }
   
   .mui-split-button {
@@ -92,7 +91,7 @@
   
   .form-row {
     display: flex;
-    gap: 66px;
+    gap: 62px;
     margin-bottom: 5px;
   }
   
@@ -112,15 +111,22 @@
   .input-field .MuiOutlinedInput-root {
     border-radius: 4px;
     padding-bottom: 0px;
+    padding: 0px 0px;
+    padding-right: 10px;
   }
   
   .input-field input, .input-field textarea {
     font-size: 12px; /* Added reduced font size for input text */
+    padding-left: 10px;
   }
   
   .input-field .MuiInputBase-input::placeholder {
-    font-size: 12px; /* Reduced font size for placeholders */
+    font-size: 12px;
     font-weight: 500;
+  }
+  
+  .input-field{
+    padding-left: 0px;
   }
   
   /* Form actions */

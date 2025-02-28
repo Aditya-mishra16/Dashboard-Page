@@ -1,57 +1,97 @@
-  .overdue-container {
-  
-    border: 1px solid #DBDBDB;
+.overdue-container {
+  border: 1px solid #DBDBDB;
+  width: 100%;
+  border-left: none;
+}
+
+.overdue-title {
+  font-weight: 600;
+  font-size: 12px;
+  color: #11334E;
+}
+
+.activity{
+  padding-top: 3px;
+  padding-left: 5px;
+}
+
+.view-all {
+  font-size: 12px;
+  color: #11334E;
+  text-decoration: underline;
+  font-weight: 600;
+  padding: 0;
+}
+
+.view-all:hover {
+  color: #0a1f35;
+}
+
+.overdue-card {
+  border: 1px solid #DBDBDB;
+  width: 220px; /* Ensures consistent width */
+  margin: 0px; /* Removes extra space */
+  padding: 0px; /* Ensures the card body doesn't have extra space */
+}
+
+.activity-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.activity-title {
+  font-weight: 600;
+  font-size: 12px;
+  width: 100%;
+}
+
+.card-body{
+  padding: 0px 5px; /* Adjusts padding inside the card */
+}
+
+.activity-details {
+  font-size: 12px;
+  padding: 8px 10px;
+  padding-bottom: 5px;
+  border-top: 1px solid #DBDBDB;
+  color: #555;
+}
+
+.date-time {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.bi-calendar, .bi-clock {
+  font-size: 14px;
+}
+
+.overdue-activities{
+  display: flex;
+  flex-wrap: nowrap; /* Prevents cards from wrapping */
+  justify-content: space-between; /* Distributes space evenly */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 992px) {
+  .overdue-activities {
+    flex-wrap: wrap; /* Wraps cards on smaller screens */
+    justify-content: center; /* Centers them */
   }
-  
-  .overdue-title {
-    font-weight: 600;
-  }
-  
-  .view-upcoming {
-    font-size: 14px;
-    color: #0E2A47;
-    text-decoration: underline;
-    padding: 0;
-  }
-  
-  .view-upcoming:hover {
-    color: #0a1f35;
-    text-decoration: underline;
-  }
-  
+
   .overdue-card {
-    border: 1px solid #DBDBDB;
-    border-radius: 8px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    width: 48%; /* Ensures two cards per row on tablets */
   }
-  
-  .overdue-card:hover {
-    transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .overdue-activities {
+    flex-direction: column; /* Stacks cards vertically on small screens */
   }
-  
-  .call-icon {
-    color: green;
-    font-size: 14px;
+
+  .overdue-card {
+    width: 100%; /* Full width on small screens */
   }
-  
-  .activity-title {
-    font-weight: 600;
-    font-size: 14px;
-  }
-  
-  .activity-details {
-    font-size: 12px;
-    color: #555;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 767px) {
-    .overdue-activities {
-      flex-direction: column;
-    }
-    
-    .overdue-card {
-      width: 100%;
-    }
-  }
+}
+
