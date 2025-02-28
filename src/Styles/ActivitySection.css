@@ -1,0 +1,15 @@
+.activity-section-container {
+  display: flex;
+  flex-direction: column;
+  width: 150%;
+}
+
+.activity-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.overdue-activities {
+  width: 100%;
+}

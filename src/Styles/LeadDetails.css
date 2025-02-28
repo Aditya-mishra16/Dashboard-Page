@@ -1,0 +1,197 @@
+#body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.lead-details {
+    background-color: white;
+    width: 485px;
+    border: 1px solid #ddd;
+    border-left: none;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.create-button{
+    display: flex;
+    padding-right: 10px;
+}
+
+.lead-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pending-actions {
+    display:flex;
+    padding-top: 100px;
+    padding-right: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pending-text{
+    padding-right: 16%;
+    padding-top: 1rem;
+}
+
+.gray-text {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: #DFFBE3;
+    font-weight: 500;
+    color: #0E9A26;
+}
+
+.btn-yellow {
+    background-color: #FFF9E6;
+    font-weight: 500;
+    color: #FCC214;
+}
+
+.account-button{
+    padding-right: 10px;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    background-color: #6a0dad;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.user-name {
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 5px;
+    color: #9F9F9F;
+}
+
+.title-name{
+    margin: 0px;
+    padding-left: 0.8rem;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.tata-text{
+    padding-right: 11.6rem;
+    color: #000000;
+}
+
+/* Tabs */
+.custom-tabs {
+    border-bottom: 0.5px solid #ddd;
+    border-top: 0.5px solid #ddd;
+    min-height: 32px; 
+}
+
+.MuiTabs-root {
+    min-height: 32px !important;
+}
+
+.MuiTab-root {
+    min-height: 32px !important;
+    font-size: 10px !important; 
+    font-weight: 600;
+    padding: 4px 8px !important; 
+    text-transform: none !important; 
+    min-width: auto !important; 
+}
+
+/* Tab Content */
+.tab-content {
+    padding: 12px;
+}
+
+.details-section {
+    padding: 12px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.info-box {
+    flex: 1;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.value {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: gray;
+    padding: 12px;
+    padding-top: 70px;
+}
+
+.edit-btn {
+    background-color: #11334E;
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.section-title{
+    padding-bottom: 12px;
+}
+
+.profile{
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+.col-12{
+    padding: 0px;
+}

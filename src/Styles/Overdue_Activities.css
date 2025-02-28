@@ -1,0 +1,58 @@
+.overdue-container {
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .overdue-title {
+    font-weight: 600;
+  }
+  
+  .view-upcoming {
+    font-size: 14px;
+    color: #0E2A47;
+    text-decoration: underline;
+    padding: 0;
+  }
+  
+  .view-upcoming:hover {
+    color: #0a1f35;
+    text-decoration: underline;
+  }
+  
+  .overdue-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .overdue-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .call-icon {
+    color: green;
+    font-size: 14px;
+  }
+  
+  .activity-title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .activity-details {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .overdue-activities {
+      flex-direction: column;
+    }
+    
+    .overdue-card {
+      width: 100%;
+    }
+  }
