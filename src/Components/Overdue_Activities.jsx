@@ -2,6 +2,8 @@ import React from "react";
 import "../Styles/Overdue_Activities.css";
 import Call from "../assets/Icons/Call.png";
 import EmailColor from "../assets/Icons/EmailColor.png";
+import CalendarIcon from "../assets/Icons/CalendarIcon.png";
+import ClockIcon from "../assets/Icons/ClockIcon.png"
 
 const OverdueActivities = () => {
   const activities = [
@@ -45,15 +47,25 @@ const OverdueActivities = () => {
               {/* Activity Details */}
               <div className="activity-details mt-1">
                 <div className="d-flex justify-content-between">
-                  <p className="mb-1"><strong>Start</strong></p>
-                  <p className="mb-1"><strong>End</strong></p>
+                  <p className="mb-1">
+                    <strong>Start</strong>
+                  </p>
+                  <p className="mb-1">
+                    <strong>End</strong>
+                  </p>
                 </div>
                 <div className="d-flex justify-content-between">
                   <p className="date-time">
-                    <i className="bi bi-calendar"></i> {activity.dueDate}
+                    <img
+                      src={CalendarIcon}
+                      alt="Calendar"
+                      className="custom-icon"
+                    />
+                    {activity.dueDate}
                   </p>
                   <p className="date-time">
-                    <i className="bi bi-clock"></i> {activity.time}
+                    <img src={ClockIcon} alt="Clock" className="custom-icon" />
+                    {activity.time}
                   </p>
                 </div>
               </div>

@@ -49,7 +49,12 @@ const ActivityForm = () => {
           <Box className="icon-part call-icon-bg">
             <img src={Call} alt="Call" className="button-icon" />
           </Box>
-          <Button variant="outlined" className="text-part" disableElevation>
+          <Button
+            variant="outlined"
+            className="text-part"
+            disableElevation
+            sx={{ color: "#000000" }} // Changed text color to black
+          >
             Log a Call
           </Button>
         </Box>
@@ -59,7 +64,12 @@ const ActivityForm = () => {
           <Box className="icon-part email-icon-bg">
             <img src={Email} alt="Email" className="button-icon" />
           </Box>
-          <Button variant="outlined" className="text-part" disableElevation>
+          <Button
+            variant="outlined"
+            className="text-part"
+            disableElevation
+            sx={{ color: "#000000" }} // Changed text color to black
+          >
             Email
           </Button>
         </Box>
@@ -69,7 +79,12 @@ const ActivityForm = () => {
           <Box className="icon-part event-icon-bg">
             <img src={Event} alt="Event" className="button-icon" />
           </Box>
-          <Button variant="outlined" className="text-part" disableElevation>
+          <Button
+            variant="outlined"
+            className="text-part"
+            disableElevation
+            sx={{ color: "#000000" }} // Changed text color to black
+          >
             Event
           </Button>
         </Box>

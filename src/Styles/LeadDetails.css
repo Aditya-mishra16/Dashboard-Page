@@ -6,7 +6,7 @@
 .lead-details {
     background-color: white;
     width: 485px;
-    height: 623px;
+    height: 607px;
     border: 1px solid #DBDBDB;
     border-left: none;
 }
@@ -172,7 +172,7 @@
     font-size: 12px;
     color: gray;
     padding: 12px;
-    padding-top: 145px;
+    padding-top: 130px;
 }
 
 .edit-btn {

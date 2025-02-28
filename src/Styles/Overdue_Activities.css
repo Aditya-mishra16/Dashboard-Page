@@ -57,10 +57,18 @@
   color: #555;
 }
 
+.custom-icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 .date-time {
   font-size: 12px;
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .bi-calendar, .bi-clock {
