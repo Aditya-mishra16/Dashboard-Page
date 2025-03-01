@@ -98,6 +98,10 @@
     flex-direction: column; /* Stacks cards vertically on small screens */
   }
 
+  .info-row{
+    flex-direction: row;
+  } 
+
   .footer{
     padding-top: 0px;
     flex-direction: row;
