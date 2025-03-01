@@ -1,6 +1,5 @@
 .activity-form-container {
     border-radius: 4px;
-    padding-top: 100px;
     margin: 0px;
     overflow: hidden;
   }
@@ -25,7 +24,7 @@
   
   .action-buttons-form {
     display: flex;
-    gap: 64px;
+    gap: 50px;
     padding: 10px;
     padding-top: 15px;
   }
@@ -45,6 +44,7 @@
   /* Or if you need to be more specific to override Material UI styles */
   .mui-split-button .text-part {
     color: #000000 !important;
+    font-size: 12px;
     font-weight: 600;
   }
   
@@ -178,7 +178,43 @@
     font-weight: 500;
   }
 
-  .row>*{
-    padding: 0px;
-    width: 40%;
+  /* Media queries for mobile responsiveness */
+@media (max-width: 767px) {
+  .activity-tabs {
+    padding: 0 8px; /* Add padding to tabs container */
   }
+
+  .tab-item {
+    padding: 12px 12px !important; /* Further reduce padding for mobile */
+  }
+
+  .action-buttons-form {
+    gap: 10px; /* Further reduce gap for mobile */
+    padding: 8px; /* Reduce padding for mobile */
+  }
+
+  .form-content {
+    padding: 12px; /* Reduce padding for mobile */
+  }
+
+  .form-row {
+    gap: 12px; /* Further reduce gap for mobile */
+  }
+
+  .field-label {
+    font-size: 11px; /* Further reduce font size for mobile */
+  }
+
+  .input-field input,
+  .input-field textarea {
+    font-size: 11px; /* Further reduce font size for mobile */
+  }
+
+  .input-field .MuiInputBase-input::placeholder {
+    font-size: 11px; /* Further reduce placeholder font size for mobile */
+  }
+
+  .submit-btn {
+    font-size: 11px !important; /* Further reduce font size for mobile */
+  }
+}

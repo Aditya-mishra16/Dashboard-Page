@@ -29,7 +29,7 @@
 
 .overdue-card {
   border: 1px solid #DBDBDB;
-  width: 220px; /* Ensures consistent width */
+  width: 210px; /* Ensures consistent width */
   margin: 0px; /* Removes extra space */
   padding: 0px; /* Ensures the card body doesn't have extra space */
 }
@@ -96,6 +96,13 @@
 @media (max-width: 767px) {
   .overdue-activities {
     flex-direction: column; /* Stacks cards vertically on small screens */
+  }
+
+  .footer{
+    padding-top: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .overdue-card {

@@ -4,13 +4,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-right: 1px solid #DBDBDB;
   transition: all 0.3s ease;
   padding-top: 0.6rem;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: -250px; /* Start off-screen */
+  width: 250px; /* Set a fixed width for the sidebar */
+}
+
+.sidebar-open {
+  left: 0; /* Bring sidebar on-screen */
+  z-index: 10000;
+  width: 50px;
 }
 
 .sidebar-closed {
-  width: 50px;
-  border-right: 1px solid #DBDBDB ;
+  left: -250px; /* Keep sidebar off-screen */
 }
 
 .sidebar-items {
@@ -18,6 +29,7 @@
   flex-direction: column;
   gap: 1.5rem;
   width: 60%;
+  margin-top: 60px; /* Add margin to avoid overlapping with the hamburger menu */
 }
 
 .sidebar-item {
@@ -31,7 +43,6 @@
   transition: all 0.2s ease;
 }
 
-/* Default background color for the second item */
 .sidebar-item.active-item {
   background-color: #11334E;
 }
@@ -40,7 +51,6 @@
   filter: brightness(0) invert(1);
 }
 
-/* Hover effect for all items except the second one */
 .sidebar-item:not(.active-item):hover {
   background-color: #11334E;
 }
@@ -61,4 +71,38 @@
   width: 18px;
   height: 18px;
   object-fit: contain;
+}
+
+/* Cancel icon styles */
+.cancel-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block; /* Visible by default for mobile */
+}
+
+.cancel-icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hide cancel icon on desktop devices */
+@media (min-width: 768px) {
+  .cancel-icon {
+    display: none; /* Hide cancel icon on desktop */
+  }
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .sidebar {
+    position: static; /* Sidebar remains static on desktop */
+    left: 0;
+    width: 50px; /* Reset width for desktop */
+  }
+
+  .sidebar-items {
+    margin-top: 0; /* Reset margin for desktop */
+  }
 }

@@ -1,7 +1,7 @@
 .activity-section-container {
   display: flex;
   flex-direction: column;
-  width: 150%;
+  width: 100%; /* Ensure the container takes full width */
 }
 
 .activity-main {
@@ -12,4 +12,23 @@
 
 .overdue-activities {
   width: 100%;
+  
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 767.98px) {
+  .activity-section-container {
+    flex-direction: column; /* Stack all components vertically */
+  }
+
+  .activity-main {
+    flex-direction: column; /* Stack ActivityForm and ActivityLogs vertically */
+    width: 100%; /* Full width for mobile */
+    gap: 12px; /* Reduce spacing for mobile */
+  }
+
+  .overdue-activities {
+    width: 100%; /* Full width for mobile */
+    margin-top: 12px; /* Reduce spacing for mobile */
+  }
 }

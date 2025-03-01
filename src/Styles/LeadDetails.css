@@ -1,87 +1,81 @@
-#body{
-    margin: 0px;
-    padding: 0px;
-}
-
 .lead-details {
     background-color: white;
-    width: 485px;
-    height: 607px;
-    border: 1px solid #DBDBDB;
-    border-left: none;
-}
-
-.small-text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-right: 1px solid #DBDBDB;
+    margin-top: 0; /* Ensure no overlap with Navbar */
+  }
+  
+  .small-text {
     font-size: 12px;
     font-weight: 500;
-}
-
-.create-button{
+  }
+  
+  .create-button {
     display: flex;
     padding-right: 10px;
-}
-
-.lead-name {
+  }
+  
+  .lead-name {
     font-size: 18px;
     font-weight: bold;
-}
-
-.pending-actions {
-    display:flex;
-    padding-top: 100px;
-    padding-right: 10px;
+  }
+  
+  .pending-actions {
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.pending-text{
+  }
+  
+  .pending-text {
     padding-right: 16%;
     padding-top: 1rem;
-}
-
-.gray-text {
+  }
+  
+  .gray-text {
     color: gray;
     margin-bottom: 5px;
-}
-
-.button-group {
+  }
+  
+  .button-group {
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-
-.btn {
+  }
+  
+  .btn {
     font-size: 10px;
     padding: 4px 8px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-}
-
-.btn-green {
+  }
+  
+  .btn-green {
     background-color: #DFFBE3;
     font-weight: 500;
     color: #0E9A26;
-}
-
-.btn-yellow {
+  }
+  
+  .btn-yellow {
     background-color: #FFF9E6;
     font-weight: 500;
     color: #FCC214;
-}
-
-.account-button{
+  }
+  
+  .account-button {
     padding-right: 10px;
-}
-
-/* User Info */
-.user-info {
+  }
+  
+  /* User Info */
+  .user-info {
     display: flex;
     align-items: center;
     padding: 12px;
-}
-
-.avatar {
+  }
+  
+  .avatar {
     width: 24px;
     height: 24px;
     background-color: #6a0dad;
@@ -93,89 +87,89 @@
     font-size: 12px;
     font-weight: bold;
     margin-right: 8px;
-}
-
-.user-name {
+  }
+  
+  .user-name {
     font-size: 12px;
     font-weight: 500;
     padding-left: 5px;
     color: #9F9F9F;
-}
-
-.title-name{
+  }
+  
+  .title-name {
     margin: 0px;
     padding-left: 0.8rem;
     font-weight: 700;
     font-size: 26px;
-}
-
-.tata-text{
-    padding-right: 11.6rem;
+  }
+  
+  .tata-text {
+    padding-right: 13.2rem;
     color: #000000;
-}
-
-/* Tabs */
-.custom-tabs {
+  }
+  
+  /* Tabs */
+  .custom-tabs {
     border-bottom: 0.5px solid #DBDBDB;
     border-top: 0.5px solid #DBDBDB;
-    min-height: 32px; 
-}
-
-.MuiTabs-root {
+    min-height: 32px;
+  }
+  
+  .MuiTabs-root {
     min-height: 32px !important;
-}
-
-.MuiTab-root {
+  }
+  
+  .MuiTab-root {
     min-height: 32px !important;
-    font-size: 11px !important; 
+    font-size: 11px !important;
     font-weight: 600 !important;
-    padding: 4px 8px !important; 
-    text-transform: none !important; 
+    padding: 4px 8px !important;
+    text-transform: none !important;
     min-width: auto !important;
     color: #9F9F9F !important;
-}
-
-/* Tab Content */
-.tab-content {
+  }
+  
+  /* Tab Content */
+  .tab-content {
     padding: 12px;
-}
-
-.details-section {
+  }
+  
+  .details-section {
     padding: 12px;
-}
-
-.info-row {
+  }
+  
+  .info-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
-}
-
-.info-box {
+  }
+  
+  .info-box {
     flex: 1;
-}
-
-.label {
+  }
+  
+  .label {
     font-size: 12px;
     font-weight: bold;
     color: black;
-}
-
-.value {
+  }
+  
+  .value {
     font-size: 12px;
     color: gray;
-}
-
-/* Footer */
-.footer {
+  }
+  
+  /* Footer */
+  .footer {
     display: flex;
     align-items: center;
     font-size: 12px;
     color: gray;
     padding: 12px;
     padding-top: 130px;
-}
-
-.edit-btn {
+  }
+  
+  .edit-btn {
     background-color: #11334E;
     height: 32px;
     width: 32px;
@@ -183,17 +177,84 @@
     border: none;
     cursor: pointer;
     margin-left: auto;
-}
-
-.section-title{
+  }
+  
+  .section-title {
     padding-bottom: 12px;
-}
-
-.profile{
+  }
+  
+  .profile {
     width: 1.35rem;
     height: 1.35rem;
-}
-
-.col-12{
+  }
+  
+  .col-12 {
     padding: 0px;
-}
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767.98px) {
+    .lead-details {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .pending-text {
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .button-group {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .create-button {
+      flex-direction: column;
+      gap: 10px;
+      padding-right: 0;
+    }
+  
+    .title-name {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .tata-text {
+      padding-right: 10rem;
+      /* text-align: center; */
+      justify-content: space-between;
+    }
+
+    .create-button{
+        flex-direction: row;
+    }
+  
+    .user-info {
+      /* justify-content: center; */
+    }
+  
+    .custom-tabs {
+      overflow-x: auto;
+    }
+  
+    .MuiTab-root {
+      font-size: 10px !important;
+      padding: 4px 6px !important;
+    }
+  
+    .info-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer {
+      padding-top: 20px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .edit-btn {
+      margin-left: 0;
+    }
+  }

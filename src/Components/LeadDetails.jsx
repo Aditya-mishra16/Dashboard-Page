@@ -23,10 +23,10 @@ const LeadDetails = () => {
           <h2 className="title-name">Aditya Mishra</h2>
           <div className="create-button">
             <div className="account-button">
-            <button className="btn btn-green">Create Account</button>
+              <button className="btn btn-green">Create Account</button>
             </div>
             <div className="contact-button">
-            <button className="btn btn-yellow">Create Contact</button>
+              <button className="btn btn-yellow">Create Contact</button>
             </div>
           </div>
         </div>

@@ -1,4 +1,51 @@
-#body{
-    padding: 0px;
-    margin: 0px;
-}
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .dashboard-container {
+    flex-grow: 1;
+    display: flex;
+  }
+  
+  .sidebar-container {
+    transition: all 0.3s ease;
+  }
+  
+  .content-area {
+    flex-grow: 1;
+    background-color: white;
+    transition: all 0.3s ease;
+    margin-left: 0; /* No margin on mobile by default */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767.98px) {
+    .content-area {
+      margin-left: 0; /* No margin on mobile when sidebar is closed */
+    }
+  
+    .sidebar-open + .content-area {
+      margin-left: 0; /* No margin on mobile when sidebar is open */
+    }
+  
+    /* Adjust the layout for mobile devices */
+    .dashboard-container {
+      flex-direction: column; /* Stack sidebar and content vertically */
+    }
+  
+    .content-area .container-fluid .row {
+      flex-direction: column; /* Stack LeadDetails and ActivitySection vertically */
+    }
+  
+    .col-12.col-md-8,
+    .col-12.col-md-4 {
+      width: 100%; /* Full width for both columns on mobile */
+    }
+  
+    .col-12.col-md-4 {
+      margin-top: 20px; /* Add space between LeadDetails and ActivitySection */
+    }
+  }

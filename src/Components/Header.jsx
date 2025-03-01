@@ -10,7 +10,7 @@ import Burgermenu from "../assets/Icons/Burgermenu.png";
 import Profile from "../assets/Icons/Profile.png";
 import Divider from "../assets/Icons/Divider.png";
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
   const [showSearch, setShowSearch] = useState(false);
 
   const toggleSearch = () => {
@@ -21,7 +21,13 @@ const Header = () => {
     <>
       <header className="header container-fluid px-3 py-2 d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center gap-3">
-          <img src={Burgermenu} alt="Menu" className="icon-menu" />
+          {/* Toggle button for sidebar */}
+          <img
+            src={Burgermenu}
+            alt="Menu"
+            className="icon-menu"
+            onClick={toggleSidebar}
+          />
           <h1 className="company-title m-0">Indore Composite</h1>
         </div>
 

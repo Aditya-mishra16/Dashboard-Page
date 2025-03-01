@@ -1,15 +1,15 @@
 .activity-logs-container {
   background-color: white;
   padding: 10px;
-  padding-top: 106px;
   border: 1px solid #DBDBDB;
-  width: 260px;
+  border-bottom: none;
+  width: 250px;
 }
 
 .logs-header {
   font-weight: 600;
   margin: 0 0 16px 0;
-  padding: 7px;
+  padding: 3px;
   padding-bottom: 10px;
   color: #11334E;
   font-size: 12px;
@@ -62,4 +62,47 @@
   font-weight: 600;
   margin: 0;
   color: #333;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 767px) {
+  .activity-logs-container {
+    padding: 8px; /* Reduce padding for mobile */
+    width: 100%; /* Full width on mobile */
+    max-width: none; /* Remove max-width restriction */
+  }
+
+  .logs-header {
+    font-size: 11px; /* Reduce font size for mobile */
+    padding-bottom: 8px; /* Reduce padding for mobile */
+  }
+
+  .logs-month {
+    font-size: 11px; /* Reduce font size for mobile */
+    padding-left: 6px; /* Reduce padding for mobile */
+  }
+
+  .logs-list {
+    margin-left: 4px; /* Reduce margin for mobile */
+  }
+
+  .log-item {
+    padding-left: 20px; /* Reduce padding for mobile */
+    margin-bottom: 12px; /* Reduce margin for mobile */
+  }
+
+  .log-dot {
+    width: 8px; /* Reduce dot size for mobile */
+    height: 8px; /* Reduce dot size for mobile */
+    left: -5px; /* Adjust position for mobile */
+    top: 5px; /* Adjust position for mobile */
+  }
+
+  .log-details {
+    font-size: 11px; /* Reduce font size for mobile */
+  }
+
+  .log-description {
+    font-size: 12px; /* Reduce font size for mobile */
+  }
 }
